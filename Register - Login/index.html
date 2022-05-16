@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="blueBg">
+            <div class="box sigin">
+                <h2>Already have an account ?</h2>
+                <button class="signInBtn">Sign in</button>
+            </div>
+            <div class="box sigup">
+                <h2>Don't have an account ?</h2>
+                <button class="signUpBtn">Sign up</button>
+            </div>
+        </div>
+        <div class="formBx">
+            <div class="form signInForm">
+                <form id="signIn">
+                    <h3>Sign In</h3>
+                    <input type="text" placeholder="Username" name="userName"  rules="required">
+                    <span>hello</span>
+                    <div class="password">
+                        <input type="password" placeholder="Password" name="password" rules="required|min:6">
+                        <div id="eye"><i class="fa-solid fa-eye"></i></div>
+                    </div>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <div class="form signUpForm">
+                <form>
+                    <h3>Sign Up</h3>
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm password">
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

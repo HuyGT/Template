@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.container .card {
+    width: 100%;
+    
+} 
+
+.container .card .imgBx {
+    width: 100%;
+    position: relative;
+    height: 310px;
+    overflow: hidden;
+    
+} 
+
+.container .card .imgBx img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+} 
+
+.container .card:hover .imgBx img {
+    transform: scale(1.5);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .content {
+    padding: 10px;
+}
+
+.container .card .content h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+    color: #333;
+}
+
+.container .card .content .price_rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .card .content .price_rating h2 {
+    color: red;
+    font-size: 20px;
+}
+
+.container .card .content .price_rating .fa-solid {
+    color: #ffd513;
+    cursor: pointer;
+}
+
+.action{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action li {
+    position: relative;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: transform 0.5s;
+}
+
+.container .card:hover .action li{
+    transform: translateY(0px);
+}
+
+.action li:hover{
+    background: red;
+    color: white;
+}
+
+.action li:nth-child(2){
+    transition-delay: 0.15s;
+}
+
+.action li:nth-child(3){
+    transition-delay: 0.3s;
+}
+
