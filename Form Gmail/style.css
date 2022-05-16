@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;500&family=Roboto+Slab&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form
+{
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    padding: 40px 20px;
+}
+
+h3
+{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.form-group
+{
+    margin-bottom: 15px;
+}
+
+input
+{
+    height: 50px;
+    width: 300px;
+    outline: none;
+    border: 1px solid #dadce0;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+input.active
+{
+    border: 2px solid #1a73e8;
+    transition: 0.3s;
+}
+label
+{
+    position: absolute;
+    padding: 0 5px;
+    display: inline-block;
+    margin-top: 13px;
+    transform: translateX(-300px);
+    cursor: text;
+    pointer-events: none;
+    color: #757575;
+    transition: 0.3s;
+}
+
+label.active
+{
+    margin-top: -10px;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #1a73e8;
+    transition: 0.3s;
+    background: #FFF;
+}
+
+#btn-login
+{
+    background: #1a73e8;
+    color: #FFF;
+}
