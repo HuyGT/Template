@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="a1.jpg" alt="" class="logo">
+        <nav>
+            <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="email" id="loginForm-email" class="form-control" value="nquanghuy112@gmail.com">
+                                <label id="loginEmail">Your
+                                    email</label>
+                            </div>
+
+                            <div class="md-form mb-4">
+                                <i class="fas fa-lock prefix grey-text"></i>
+                                <input type="password" id="loginForm-pass" class="form-control" value="Test123@">
+                                <label id="loginPass">Your
+                                    password</label>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-default" id="login">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal"
+                    data-target="#modalLoginForm">Login</a>
+            </div>
+
+
+            <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="registerForm-name" class="form-control" value="HuyGT">
+                                <label id="labelName">Your name</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-phone prefix grey-text"></i>
+                                <input type="text" id="registerForm-phone" class="form-control" value="0365892505">
+                                <label id="labelPhone">Your Phone</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="email" id="registerForm-email" class="form-control"
+                                    value="nquanghuy112@gmail.com">
+                                <label id="labelEmail">Your email</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-road prefix grey-text"></i>
+                                <input type="text" id="registerForm-address" class="form-control" value="Abcxyz">
+                                <label id="labelAddress">Your address</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-code prefix grey-text"></i>
+                                <input type="text" id="registerForm-zip" class="form-control" value="111-222-333">
+                                <label id="labelZip">Your zipcode</label>
+                            </div>
+
+                            <div class="md-form mb-4">
+                                <i class="fas fa-lock prefix grey-text"></i>
+                                <input type="password" id="registerForm-pass" class="form-control" value="Test123@">
+                                <label id="labelPass">Your
+                                    password</label>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-deep-orange" id="register">Sign up</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal"
+                    data-target="#modalRegisterForm">Register</a>
+            </div>
+            <div class="text-center">
+                <a href="" class="btn btn-default btn-rounded mb-4" id="logout">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <h1>Name: <span id="name"></span></h1> <br>
+    <h1>Email: <span id="email"></span></h1> <br>
+    <h1>Address: <span id="address"></span></h1> <br>
+    <h1>Zip-code: <span id="zip"></span></h1> <br>
+    <h1>Phone: <span id="phone"></span></h1> <br>
+    <h1>Password: <span id="pass"></span></h1> <br>
+    <div class="content">
+        <div style="height: 100vh">
+            <div class="flex-center flex-column">
+                <h1 class="text-hide animated fadeIn mb-4"
+                    style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">
+                    MDBootstrap</h1>
+                <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+                <p class="animated fadeIn text-muted">MDB Team</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
